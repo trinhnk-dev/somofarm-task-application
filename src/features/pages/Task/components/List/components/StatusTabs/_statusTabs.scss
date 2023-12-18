@@ -1,0 +1,31 @@
+@import "../../../../../../../styles/Helper/mixin";
+.custom-tabs{
+    @include desktop-xl {
+        width: 90%;
+      }
+      @include mobile-sm{
+        width: 50%;
+      }
+    .ant-tabs-nav {
+        flex-wrap: nowrap;
+        @include mobile {
+          width: 70%;
+          margin: 0 auto;
+          overflow-x: auto;
+          overflow-y: hidden;
+        }
+        @include tablet {
+          width: 100%;
+        }
+      }
+}
+
+
+.custom-tabs .ant-tabs-nav .ant-tabs-tab {
+  width: auto;
+  white-space: nowrap;
+}
+
+.ant-tabs-dropdown-menu-item:hover{
+  padding: 10px;
+}

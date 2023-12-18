@@ -1,0 +1,7 @@
+@import "../../../../styles/Helper/mixin";
+.admin-zone-header {
+  @include flex(row, space-between, null, null);
+  @media screen and (max-width: 1300px) {
+    @include flex(column, center, center, null);
+  }
+}

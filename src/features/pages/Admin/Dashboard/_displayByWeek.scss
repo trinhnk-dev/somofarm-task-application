@@ -1,0 +1,33 @@
+@import '../../../../styles/Helper/mixin';
+.admin-displayByWeek {
+  @include flex(row, space-around, center, wrap);
+  .ant-card {
+    width: 40%;
+    box-shadow: 1px 1px 3px #0000001a, 1px 2px 3px #0000000f,
+      1px 2px 3px #0000001a, 1px 2px 3px #0000000f;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    @include mobile {
+      width: 80%;
+    }
+    @include mobile-sm {
+      width: 100%;
+    }
+  }
+  .ant-card-bottom {
+    height: 350px;
+    @include desktop-xxl {
+      height: 400px;
+    }
+    @include mobile {
+      height: 350px;
+    }
+    @media screen and (max-width: 650px) {
+      height: 400px;
+    }
+    @include mobile-sm {
+      height: 450px;
+    }
+  }
+}

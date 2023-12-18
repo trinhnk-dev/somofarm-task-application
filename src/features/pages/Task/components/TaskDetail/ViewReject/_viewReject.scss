@@ -1,0 +1,444 @@
+.evidence-content {
+    width: 100%;
+    background-color: #f5f5f5;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #0000001a, 0 1px 2px #0000000f;
+    border: 0.5px solid #ced4da;
+    .evidence-item-header {
+      @include flex(row, space-between, center, null);
+      margin: 0px 20px 10px 20px;
+      .evidence-name {
+        @include flex(row, flex-start, center, null);
+        width: 40%;
+        h3 {
+          margin-left: 10px;
+        }
+      }
+      .evidence-time {
+        @include flex(row, flex-end, center, null);
+      }
+    }
+    .evidence-item {
+      .evidence-desc {
+        max-width: 80%;
+        font-size: 16px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        h6 {
+          display: inline-block;
+          font-size: 16px;
+        }
+        span{
+          margin-left: 5px;
+          color: $color-primary;
+          cursor: pointer;
+          transition: 0.3s all;
+        }
+        span:hover{
+          opacity: 0.75;
+          transition: 0.3s all;
+        }
+      }
+    }
+    .evidence-img {
+      @include flex(row, center, null, null);
+      .collapse-evidence {
+        width: 95%;
+        margin-top: 10px;
+        background-color: #fff;
+        transition: 0.3s all;
+        .evidence-panel {
+          @include flex(row, space-between, null, null);
+          .evidence-panel-title {
+            width: 70%;
+          }
+          .evidence-panel-img {
+            width: 30%;
+            @include flex(row, flex-end, null, null);
+            color: #38b000;
+          }
+        }
+      }
+      .collapse-evidence:hover {
+        box-shadow: 0 0 11px #38b000;
+        transition: 0.3s all;
+      }
+      p {
+        width: 48%;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+      .img-contain {
+        width: 100%;
+        @include flex(row, space-around, null, wrap);
+        background-color: white;
+        padding: 15px 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        .img-evidence {
+          width: 100%;
+          height: 300px;
+          .ant-image {
+            width: 100%;
+            @include flex(row, center, null, null);
+            height: 100%;
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              border-radius: 8px;
+            }
+          }
+        }
+        .img-evidence-2 {
+          width: 48%;
+          height: 300px;
+          .ant-image {
+            width: 100%;
+            height: 100%;
+            @include flex(row, center, null, null);
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+        .img-evidence-3 {
+          width: 32%;
+          height: 300px;
+          .ant-image {
+            @include flex(row, center, null, null);
+            width: 100%;
+            height: 100%;
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+        .img-evidence-4 {
+          width: 49%;
+          height: 250px;
+          margin-bottom: 5px;
+          .ant-image {
+            width: 100%;
+            height: 100%;
+            @include flex(row, center, null, nul);
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+          }
+        }
+        .img-evidence-more-4 {
+          width: 49%;
+          height: 250px;
+          margin-bottom: 5px;
+          .ant-image {
+            width: 100%;
+            height: 100%;
+            @include flex(row, center, null, null);
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+          }
+        }
+
+        .overlay {
+          position: relative;
+          .ant-image {
+            position: absolute;
+            .ant-image-mask {
+              border-radius: 8px;
+              z-index: 3000;
+            }
+            img {
+              border-radius: 8px;
+            }
+          }
+          .overlay-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            transition: 0.5s all;
+            font-weight: bold;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            cursor: pointer;
+            .overlay-text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }.evidence-content {
+    width: 100%;
+    background-color: #f5f5f5;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #0000001a, 0 1px 2px #0000000f;
+    .evidence-item-header {
+      @include flex(row, space-between, center, null);
+      margin: 0px 20px 10px 20px;
+      .evidence-name {
+        @include flex(row, flex-start, center, null);
+        width: 40%;
+        h3 {
+          margin-left: 10px;
+        }
+      }
+      .evidence-time {
+        @include flex(row, flex-end, center, null);
+      }
+    }
+    .evidence-item {
+      .evidence-desc {
+        max-width: 80%;
+        font-size: 16px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        h6 {
+          display: inline-block;
+          font-size: 16px;
+        }
+        span{
+          margin-left: 5px;
+          color: $color-primary;
+          cursor: pointer;
+          transition: 0.3s all;
+        }
+        span:hover{
+          opacity: 0.75;
+          transition: 0.3s all;
+        }
+      }
+    }
+    .evidence-img {
+      @include flex(row, center, null, null);
+      .collapse-evidence {
+        width: 95%;
+        margin-top: 10px;
+        background-color: #fff;
+        transition: 0.3s all;
+        .evidence-panel {
+          @include flex(row, space-between, null, null);
+          .evidence-panel-title {
+            width: 70%;
+          }
+          .evidence-panel-img {
+            width: 30%;
+            @include flex(row, flex-end, null, null);
+            color: #38b000;
+          }
+        }
+      }
+      .collapse-evidence:hover {
+        box-shadow: 0 0 11px #38b000;
+        transition: 0.3s all;
+      }
+      p {
+        width: 48%;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+      .img-contain {
+        width: 100%;
+        @include flex(row, space-around, null, wrap);
+        background-color: white;
+        padding: 15px 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        .img-evidence {
+          width: 100%;
+          height: 300px;
+          .ant-image {
+            width: 100%;
+            @include flex(row, center, null, null);
+            height: 100%;
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              border-radius: 8px;
+            }
+          }
+        }
+        .img-evidence-2 {
+          width: 48%;
+          height: 300px;
+          .ant-image {
+            width: 100%;
+            height: 100%;
+            @include flex(row, center, null, null);
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+        .img-evidence-3 {
+          width: 32%;
+          height: 300px;
+          .ant-image {
+            @include flex(row, center, null, null);
+            width: 100%;
+            height: 100%;
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+        .img-evidence-4 {
+          width: 49%;
+          height: 250px;
+          margin-bottom: 5px;
+          .ant-image {
+            width: 100%;
+            height: 100%;
+            @include flex(row, center, null, nul);
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+          }
+        }
+        .img-evidence-more-4 {
+          width: 49%;
+          height: 250px;
+          margin-bottom: 5px;
+          .ant-image {
+            width: 100%;
+            height: 100%;
+            @include flex(row, center, null, null);
+            .ant-image-mask {
+              border-radius: 8px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+          }
+        }
+
+        .overlay {
+          position: relative;
+          .ant-image {
+            position: absolute;
+            .ant-image-mask {
+              border-radius: 8px;
+              z-index: 3000;
+            }
+            img {
+              border-radius: 8px;
+            }
+          }
+          .overlay-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            transition: 0.5s all;
+            font-weight: bold;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            cursor: pointer;
+            .overlay-text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }

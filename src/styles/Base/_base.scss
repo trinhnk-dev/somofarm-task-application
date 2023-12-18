@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+@import "../Helper/mixin";
+iframe#webpack-dev-server-client-overlay{display:none!important}
+body {
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff !important;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 115.2rem;
+  padding: auto 3.2rem;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+.ant-layout{
+  background: #fff;
+  // @include desktop {
+  //   margin-left: 200px;
+  // }
+  .ant-layout-content{
+    background-color: #fff;
+  }
+  @include tablet {
+    display: block;
+  }
+}
+
+.site-layout{
+  margin-left: 200px;
+  background-color: #f5f5f5;
+  @include tablet{
+    margin: 0;
+
+  }
+}
+
+.task-form {
+  display: flex;
+  justify-content: space-around;
+  @include mobile-sm{
+    display: block;
+  }
+  .form-left {
+    width: 45%;
+    @include mobile-sm{
+      width: 100%;
+    }
+  }
+  .form-right {
+    width: 45%;
+    @include mobile-sm{
+      width: 100%;
+    }
+  }
+  .form-task-button{
+    display: inline-block;
+  }
+}
+
+.custom-input {
+  border-radius: 6px;
+  padding: 4px 12px;
+  background-color: white;
+  height: 22px;
+}
+
+.custom-input:focus {
+  outline: none;
+  border: 1px solid #0c8af8;
+  box-shadow: 0 0 10px 2px #0074d9;
+}
+
+.menu-admin{
+  .ant-menu-title-content{
+    display: flex;
+    align-items: center;
+    span{
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.first-step-animal-group {
+  display: flex;
+  justify-content: space-around;
+
+  .form-left {
+    width: 45%;
+  }
+
+  .form-right {
+    width: 45%;
+  }
+}

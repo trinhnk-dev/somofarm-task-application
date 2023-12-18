@@ -1,0 +1,21 @@
+.content.loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.clock-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  .ant-picker-cellphone-inner {
+    position: relative;
+    padding-top: 12px;
+    text-align: center;
+    height: 100%;
+  }
+
+  .ant-picker-cell-inner{
+    background-color:transparent;
+  }

@@ -1,0 +1,78 @@
+@import "../../../styles/Helper/mixin";
+// flex($direction: row, $content: null, $items: null, $wrap: null)
+
+
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @include tablet {
+    width: 45%;
+  }
+  @include mobile {
+    width: 32%;
+  }
+  .nav-item {
+    @include flex(row, space-around, null, null);
+    @include tablet {
+      @include flex(row, space-around, center, null);
+    }
+    .header-notification {
+      font-size: 16px;
+      .notification-icon {
+        font-size: 24px;
+        border-radius: 50%;
+      }
+      .notification-icon:hover {
+        cursor: pointer;
+        opacity: 0.6;
+      }
+    }
+    .header-profile {
+      font-size: 16px;
+      margin: 0px 40px 0px 20px;
+      @include flex(row, null, center, null);
+      @include mobile {
+        margin: 0px 20px 0px 20px;
+      }
+      @include mobile-sm {
+        margin: 0px 5px 0px 5px;
+      }
+      .ant-space {
+        .ant-space-item {
+          color: black;
+          @include flex(row, null, center, null);
+          svg {
+            font-size: 14px;
+          }
+        }
+        .ant-space-item:hover {
+          color: $color-primary;
+        }
+      }
+      
+    }
+  }
+}
+
+.menu-header{
+  width: 130px;
+  text-align: left;
+  p{
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 10px;
+    transition: 0.2s all;
+    border-radius: 8px;
+    svg{
+      margin-right: 5px;
+    }
+  }
+  p:hover{
+    background-color: #1677ff;
+    color: white;
+    transition: 0.2s all;
+    border-radius: 8px;
+  }
+}

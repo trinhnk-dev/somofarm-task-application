@@ -1,0 +1,128 @@
+@import '../../../styles/Helper/mixin';
+
+.dashboard {
+  background-color: #fcfffc;
+  padding: 20px;
+  height: 100%;
+  h3 {
+    margin: 15px;
+  }
+  .dashboard-header {
+    width: 100%;
+    @include flex(row, space-around, center, null);
+    @include mobile {
+      @include flex(row, space-around, center, wrap);
+    }
+    .dashboard-content {
+      width: 22%;
+      height: 150px;
+      @include flex(row, space-between, null, null);
+      box-shadow: 1px 1px 3px #0000001a, 1px 2px 3px #0000000f,
+        1px 2px 3px #0000001a, 1px 2px 3px #0000000f;
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px 20px;
+      @include desktop-xl {
+        padding: 30px 10px;
+      }
+      @include mobile {
+        width: 40%;
+        margin-bottom: 20px;
+      }
+      @include desktop-xl {
+        height: 120px;
+      }
+      .dashboard-text {
+        @include desktop-xl {
+          width: 50%;
+        }
+        p {
+          font-size: 18px;
+          margin-bottom: 10px;
+          font-weight: 500;
+          color: #6e7682;
+          @include desktop-xl {
+            font-size: 15px;
+          }
+          @include mobile-sm {
+            font-size: 12px;
+          }
+        }
+        h5 {
+          font-size: 34px;
+          font-weight: 700;
+          @include desktop-xl {
+            font-size: 30px;
+          }
+          @include mobile-sm {
+            font-size: 24px;
+          }
+        }
+      }
+      .dashboard-logo {
+        width: 50%;
+        @include flex(row, flex-end, null, null);
+        padding: 5px;
+        border-radius: 50%;
+        @include desktop-xl {
+          width: 50%;
+        }
+      }
+      .dashboard-todo {
+        background-color: #1a659e;
+        @include dashboard-circle-box;
+        @include svg-dashboard;
+      }
+      .dashboard-doing {
+        background-color: #f49cbb;
+        @include dashboard-circle-box;
+        @include svg-dashboard;
+      }
+      .dashboard-pending {
+        background-color: #fbb02d;
+        @include dashboard-circle-box;
+        @include svg-dashboard;
+      }
+      .dashboard-close {
+        background-color: #02c39a;
+        @include dashboard-circle-box;
+        @include svg-dashboard;
+      }
+    }
+  }
+  .dashboard-footer {
+    @include flex(row, space-around, center, null);
+    @include mobile {
+      @include flex(column-reverse, space-around, center, null);
+    }
+    h3 {
+      margin: 15px;
+    }
+    padding-top: 20px;
+    .dashboard-chart {
+      width: 59%;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 1px 1px 3px #0000001a, 1px 2px 3px #0000000f,
+        1px 2px 3px #0000001a, 1px 2px 3px #0000000f;
+      @include mobile {
+        width: 90%;
+      }
+    }
+    .dashboard-piechart {
+      width: 35%;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 1px 1px 3px #0000001a, 1px 2px 3px #0000000f,
+        1px 2px 3px #0000001a, 1px 2px 3px #0000000f;
+      height: 456px;
+      @include mobile {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+      .recharts-legend-wrapper {
+        bottom: 40px !important;
+      }
+    }
+  }
+}

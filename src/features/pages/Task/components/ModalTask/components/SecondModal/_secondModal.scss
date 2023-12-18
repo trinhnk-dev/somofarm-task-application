@@ -1,0 +1,182 @@
+@import "../../../../../../../styles/Helper/mixin";
+@import "../../../../../../../styles/Helper/extend";
+.second-modal-livestock {
+  @include flex(column, center, center, null);
+  .specific-animal {
+    overflow: hidden;
+    border-radius: 10px;
+    button {
+      padding: 20px 20px;
+      background-color: $green-color-600;
+      transition: 0.4s ease-in-out;
+      border: 1px solid $green-color-600;
+      cursor: pointer;
+      .button-item {
+        display: flex;
+        .button-icon {
+          width: 30%;
+          @include flex(row, center, center, null);
+          svg {
+            font-size: 50px;
+            color: $white-color-300;
+          }
+        }
+        .button-text {
+          width: 70%;
+          display: flex;
+          @include flex(column, null, flex-start, null);
+          color: $white-color-300;
+          h6 {
+            font-size: 24px;
+          }
+          span {
+            text-align: left;
+            font-size: 14px;
+            color: #e6e8e6;
+          }
+        }
+      }
+    }
+    button:hover {
+      transform: scale(1.1);
+      transition: 0.4s ease-in-out;
+      opacity: 0.75;
+    }
+  }
+  .whole-barn {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    button {
+      padding: 20px 20px;
+      background-color: $green-color-600;
+      transition: 0.4s ease-in-out;
+      border: 1px solid $green-color-600;
+      cursor: pointer;
+      .button-item {
+        display: flex;
+        .button-icon {
+          width: 30%;
+          @include flex(row, center, center, null);
+          svg {
+            font-size: 50px;
+            color: $white-color-300;
+            margin-right: 13px;
+          }
+        }
+        .button-text {
+          width: 70%;
+          display: flex;
+          @include flex(column, null, flex-start, null);
+          color: $white-color-300;
+          h6 {
+            font-size: 24px;
+          }
+          span {
+            text-align: left;
+            font-size: 14px;
+            color: #e6e8e6;
+          }
+        }
+      }
+    }
+    button:hover {
+      transform: scale(1.1);
+      transition: 0.4s ease-in-out;
+      opacity: 0.75;
+    }
+  }
+}
+
+.second-modal-planting {
+  @include flex(column, center, center, null);
+  .specific-plant {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid $green-color-600;
+    button {
+      padding: 20px 15px;
+      border-radius: 10px;
+      background-color: $white-color-300;
+      transition: 0.4s ease-in-out;
+      border: 0;
+      cursor: pointer;
+      .button-item {
+        display: flex;
+        .button-icon {
+          width: 30%;
+          @include flex(row, center, center, null);
+          svg {
+            font-size: 50px;
+            color: $green-color-600;
+          }
+        }
+        .button-text {
+          width: 70%;
+          display: flex;
+          @include flex(column, null, flex-start, null);
+          color: $green-color-600;
+          h6 {
+            font-size: 24px;
+          }
+          span {
+            text-align: left;
+            font-size: 14px;
+            color: #4c956c;
+          }
+        }
+      }
+    }
+    button:hover {
+      transform: scale(1.1);
+      transition: 0.4s ease-in-out;
+      opacity: 0.75;
+    }
+  }
+  .whole-garden {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid $green-color-600;
+    button {
+      padding: 20px 30px;
+      border-radius: 10px;
+      background-color: $white-color-300;
+      transition: 0.4s ease-in-out;
+      border: 0;
+      cursor: pointer;
+      .button-item {
+        display: flex;
+        .button-icon {
+          width: 30%;
+          @include flex(row, center, center, null);
+          svg {
+            font-size: 50px;
+            color: $green-color-600;
+            margin-right: 13px;
+          }
+        }
+        .button-text {
+          width: 70%;
+          display: flex;
+          @include flex(column, null, flex-start, null);
+          color: $green-color-600;
+          h6 {
+            font-size: 24px;
+          }
+          span {
+            text-align: left;
+            font-size: 14px;
+            color: #4c956c;
+          }
+        }
+      }
+    }
+    button:hover {
+      transform: scale(1.1);
+      transition: 0.4s ease-in-out;
+      opacity: 0.75;
+    }
+  }
+}

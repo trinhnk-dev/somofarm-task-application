@@ -1,0 +1,23 @@
+@import "../../../styles/Helper/mixin";
+// flex($direction: row, $content: null, $items: null, $wrap: null)
+
+.sider {
+  .ant-layout-sider {
+    box-shadow: 3px 0px 2px 0 rgba(94, 98, 105, 0.2);
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    .logoSomo {
+      width: 100%;
+      @include flex(row, center, null, null);
+      border-bottom: 1px solid #f5f5f5;
+      padding: 10px 0px;
+      img {
+        width: 80%;
+      }
+    }
+  }
+}

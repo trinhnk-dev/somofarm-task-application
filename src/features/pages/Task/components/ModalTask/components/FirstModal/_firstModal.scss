@@ -1,0 +1,132 @@
+@import "../../../../../../../styles/Helper/mixin";
+@import "../../../../../../../styles/Helper/extend";
+
+.first-modal {
+  @include flex(column, center, center, null);
+  .livestock {
+    overflow: hidden;
+    border-radius: 10px;
+    button {
+      padding: 20px 10px;
+      background-color: $green-color-600;
+      transition: 0.4s ease-in-out;
+      border: 1px solid $green-color-600;
+      cursor: pointer;
+      .button-item {
+        display: flex;
+        .button-icon {
+          width: 40%;
+          @include flex(row, center, center, null);
+          svg {
+            font-size: 50px;
+            color: $white-color-300;
+          }
+        }
+        .button-text {
+          width: 50%;
+          @include flex(column, null, flex-start, null);
+          color: $white-color-300;
+          h6 {
+            font-size: 24px;
+          }
+          span {
+            text-align: left;
+            color: #e6e8e6;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    button:hover {
+      transform: scale(1.1);
+      transition: 0.4s ease-in-out;
+      opacity: 0.75;
+    }
+  }
+  .planting {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid $green-color-600;
+    button {
+      background-color: $white-color-300;
+      transition: 0.4s ease-in-out;
+      border: 0;
+      border-radius: 10px;
+      padding: 20px 15px;
+      cursor: pointer;
+      .button-item {
+        display: flex;
+        .button-icon {
+          width: 40%;
+          @include flex(row, center, center, null);
+          svg {
+            font-size: 50px;
+            color: $green-color-600;
+          }
+        }
+        .button-text {
+          width: 50%;
+          @include flex(column, null, flex-start, null);
+          h6 {
+            font-size: 24px;
+            color: $green-color-600;
+          }
+          span {
+            text-align: left;
+            font-size: 14px;
+            color: #226f54;
+          }
+        }
+      }
+    }
+    button:hover {
+      transform: scale(1.1);
+      transition: 0.4s ease-in-out;
+      opacity: 0.75;
+    }
+  }
+  .other {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    button {
+      background-color: $green-color-600;
+      transition: 0.4s ease-in-out;
+      border: 1px solid $green-color-600;
+      padding: 28px 45px;
+      cursor: pointer;
+      .button-item {
+        display: flex;
+        .button-icon {
+          width: 20%;
+          @include flex(column, center, center, null);
+          margin-right: 20px;
+          svg {
+            font-size: 50px;
+            color: $white-color-300;
+          }
+        }
+        .button-text {
+          width: 80%;
+          @include flex(column, null, flex-start, null);
+          margin-left: 20px;
+          color: $white-color-300;
+          h6 {
+            font-size: 24px;
+          }
+          span {
+            text-align: left;
+            font-size: 14px;
+            color: #e6e8e6;
+          }
+        }
+      }
+    }
+    button:hover {
+      transform: scale(1.1);
+      transition: 0.4s ease-in-out;
+      opacity: 0.75;
+    }
+  }
+}

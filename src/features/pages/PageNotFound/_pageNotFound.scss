@@ -1,0 +1,15 @@
+.page-not-fount-container {
+  max-width: 2100px;
+  text-align: center;
+  margin-top: 20%;
+  .error-number-404 {
+    font-size: 100px;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 3px #000;
+  }
+  .error-content {
+    font-size: 90px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+}

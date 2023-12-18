@@ -1,0 +1,54 @@
+@import "../../../../../../../styles/Helper/mixin";
+
+.effort-modal {
+    .ant-modal-content {
+      .ant-modal-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+  
+      .effort {
+        .effort-content {
+          background-color: rgba(0, 0, 0, 0.02);
+          padding: 10px 0px;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          box-shadow: 0 1px 3px #0000001a, 0 1px 2px #0000000f;
+          border: 1px solid #adb5bd;
+          .effort-header{
+            margin-left: 10px;
+            .effort-count {
+              width: 80%;
+              font-size: 20px;
+              font-weight: 500;
+              margin-bottom: 10px;
+              span{
+                text-decoration: underline;
+              }
+            }
+            .effort-dropdown{
+              width: 20%;
+              @include flex(row, flex-end, null, null);
+            }
+          }
+          
+          .effort-container {
+            @include flex(row, space-between, null, null);
+            padding: 10px 25px;
+            border-radius: 10px;
+            .effort-item {
+              width: 80%;
+            }
+          }
+          p {
+            margin-bottom: 5px;
+            font-size: 16px;
+          }
+          strong {
+            font-size: 18px;
+          }
+        }
+      }
+      
+    }
+  }

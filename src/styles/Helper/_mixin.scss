@@ -1,0 +1,218 @@
+$mobile-sm-width: 480px;
+$mobile-width: 792px;
+$tablet-width: 992px;
+$desktop-width: 1024px;
+$desktop-xl-width: 1200px;
+
+@mixin mobile-sm {
+  @media (max-width: #{$mobile-sm-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+@mixin desktop-xl {
+  @media (max-width: #{$desktop-xl-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-xxl{
+  @media (max-width: #{1300px}) {
+    @content;
+  }
+}
+
+// ---------------------------------------------------------------------------
+
+$color-primary: #1677ff;
+
+$green-color-400: #8ead48;
+$green-box-shadow-400: rgba(142, 173, 72, 0.4);
+$green-color-500: #bfffc7;
+$green-color-600: #004b23;
+$green-color-700: #38b000;
+
+$white-color-300: #f4f0bb;
+
+// ---------------------------------------------------------------------------
+
+@mixin flex($direction: row, $content: null, $items: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+  flex-wrap: $wrap;
+}
+
+@mixin dashboard-circle-box {
+  @include flex(row, center, center, null);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  @include desktop-xl {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@mixin svg-dashboard {
+  svg {
+    width: 21px;
+    height: 21px;
+
+    path {
+      fill: white;
+      stroke: white;
+    }
+  }
+}
+
+@mixin statistic-title {
+  .ant-statistic-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #f0eff4;
+  }
+}
+
+@mixin statistic-content{
+  .ant-statistic-content{
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+  }
+}
+
+@mixin statistic-title-black {
+  .ant-statistic-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #5c6b73;
+  }
+}
+
+@mixin statistic-content-black{
+  .ant-statistic-content{
+    font-size: 34px;
+    font-weight: 700;
+    color: black;
+  }
+}
+
+@mixin card-area{
+  .card-area {
+    background-color: #1a659e;
+    @include statistic-title;
+    @include statistic-content;
+    box-shadow: 1px 1px 3px #1a659e, 1px 2px 3px #1a659e, 1px 2px 3px #1a659e,
+      1px 2px 3px #1a659e;
+    border: 1px solid #1a659e;
+  }
+}
+
+@mixin card-zone{
+  .card-zone {
+    background-color: #f49cbb;
+    @include statistic-title;
+    @include statistic-content;
+    box-shadow: 1px 1px 3px #f49cbb, 1px 2px 3px #f49cbb, 1px 2px 3px #f49cbb,
+      1px 2px 3px #f49cbb;
+    border: 1px solid #f49cbb;
+  }
+}
+
+@mixin card-barn{
+  .card-barn {
+    background-color: #fbb02d;
+    @include statistic-title;
+    @include statistic-content;
+    box-shadow: 1px 1px 3px #fbb02d, 1px 2px 3px #fbb02d, 1px 2px 3px #fbb02d,
+      1px 2px 3px #fbb02d;
+    border: 1px solid #fbb02d;
+  }
+}
+
+@mixin card-garden{
+  .card-garden {
+    background-color: #02c39a;
+    @include statistic-title;
+    @include statistic-content;
+    box-shadow: 1px 1px 3px #02c39a, 1px 2px 3px #02c39a, 1px 2px 3px #02c39a,
+      1px 2px 3px #02c39a;
+    border: 1px solid #02c39a;
+  }
+}
+
+@mixin card-animal{
+  .card-animal {
+    background-color: #1a659e;
+    @include statistic-title;
+    @include statistic-content;
+    box-shadow: 1px 1px 3px #1a659e, 1px 2px 3px #1a659e, 1px 2px 3px #1a659e,
+      1px 2px 3px #1a659e;
+    border: 1px solid #1a659e;
+  }
+}
+
+@mixin card-plant{
+  .card-plant {
+    background-color: #2291f4;
+    @include statistic-title;
+    @include statistic-content;
+    box-shadow: 1px 1px 3px #2291f4, 1px 2px 3px #2291f4, 1px 2px 3px #2291f4,
+      1px 2px 3px #2291f4;
+    border: 1px solid #2291f4;
+  }
+}
+
+@mixin card-material{
+  .card-material {
+    background-color: #f49cbb;
+    @include statistic-title;
+    @include statistic-content;
+    box-shadow: 1px 1px 3px #f49cbb, 1px 2px 3px #f49cbb, 1px 2px 3px #f49cbb,
+      1px 2px 3px #f49cbb;
+    border: 1px solid #f49cbb;
+  }
+}
+
+@mixin card-member{
+  .card-member {
+    background-color: #02c39a;
+    @include statistic-title;
+    @include statistic-content;
+    box-shadow: 1px 1px 3px #02c39a, 1px 2px 3px #02c39a, 1px 2px 3px #02c39a,
+      1px 2px 3px #02c39a;
+    border: 1px solid #02c39a;
+  }
+}
+
+.dashboard-card {
+  @include card-area;
+  @include card-zone;
+  @include card-barn;
+  @include card-garden;
+  @include card-animal;
+  @include card-plant;
+  @include card-material;
+  @include card-member;
+  @include statistic-title-black;
+  @include statistic-content-black;
+}
